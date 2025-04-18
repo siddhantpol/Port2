@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Your Anime Portfolio</title>
+  <link rel="stylesheet" href="/src/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+  <div id="app">
+    <header class="header">
+      <div class="container">
+        <div class="logo">
+          <a href="#hero" class="logo-link">Your<span>Anime</span></a>
+        </div>
+        <nav class="nav">
+          <ul class="nav-list">
+            <li class="nav-item"><a href="#hero" class="nav-link">Home</a></li>
+            <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
+            <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+            <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+            <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="mobile-nav-toggle">
+          <i class="fas fa-bars"></i>
+        </div>
+      </div>
+    </header>
+
+    <section id="hero" class="hero">
+      <div class="container">
+        <div class="hero-content">
+          <h1 class="hero-title">Your<span>Anime</span></h1>
+          <div class="search-box">
+            <input type="text" placeholder="Search projects..." class="search-input">
+            <button class="search-button"><i class="fas fa-search"></i></button>
+          </div>
+          <div class="trending">
+            <p>Top skills: <span>Front-end Development</span>, <span>UI Design</span>, <span>Animation</span>, <span>Illustration</span>, <span>3D Modeling</span></p>
+          </div>
+          <a href="#projects" class="cta-button">View Portfolio <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+    </section>
+
+    <section id="featured" class="featured">
+      <div class="container">
+        <h2 class="section-title">Featured Work</h2>
+        <div class="featured-slider">
+          <div class="featured-item">
+            <img src="https://ext.same-assets.com/3041271044/3481533639.woff2" alt="Project 1">
+            <div class="featured-info">
+              <h3>Project One</h3>
+              <p>Web Development</p>
+              <a href="#" class="view-project">View Project <i class="fas fa-external-link-alt"></i></a>
+            </div>
+          </div>
+          <div class="featured-item">
+            <img src="https://ext.same-assets.com/3041271044/167678981.png" alt="Featured Project One">
+            <div class="featured-info">
+              <h3>Anime Character Design</h3>
+              <p>Illustration</p>
+              <a href="#" class="view-project">View Project <i class="fas fa-external-link-alt"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="slider-controls">
+          <button class="slider-prev"><i class="fas fa-chevron-left"></i></button>
+          <button class="slider-next"><i class="fas fa-chevron-right"></i></button>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="projects">
+      <div class="container">
+        <h2 class="section-title">All Projects</h2>
+        <div class="category-filter">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="web">Web Design</button>
+          <button class="filter-btn" data-filter="illustration">Illustration</button>
+          <button class="filter-btn" data-filter="animation">Animation</button>
+          <button class="filter-btn" data-filter="3d">3D Modeling</button>
+        </div>
+        <div class="projects-grid">
+          <div class="project-card web">
+            <div class="project-image">
+              <img src="https://ext.same-assets.com/3041271044/2387583440.png" alt="Responsive Anime Website">
+            </div>
+            <div class="project-info">
+              <h3>Responsive Anime Website</h3>
+              <p>A responsive website for anime streaming with dark theme and intuitive navigation.</p>
+              <div class="project-tags">
+                <span class="project-tag">HTML/CSS</span>
+                <span class="project-tag">JavaScript</span>
+                <span class="project-tag">Responsive Design</span>
+              </div>
+              <div class="project-links">
+                <a href="#" class="project-link">View Details <i class="fas fa-arrow-right"></i></a>
+                <a href="#" class="project-link">Live Demo <i class="fas fa-external-link-alt"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card illustration">
+            <div class="project-image">
+              <img src="https://ext.same-assets.com/3041271044/167678981.png" alt="Anime Character Design">
+            </div>
+            <div class="project-info">
+              <h3>Anime Character Design</h3>
+              <p>Original anime character design with detailed background story and expression sheets.</p>
+              <div class="project-tags">
+                <span class="project-tag">Character Design</span>
+                <span class="project-tag">Digital Art</span>
+                <span class="project-tag">Concept Art</span>
+              </div>
+              <div class="project-links">
+                <a href="#" class="project-link">View Details <i class="fas fa-arrow-right"></i></a>
+                <a href="#" class="project-link">Live Demo <i class="fas fa-external-link-alt"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card 3d">
+            <div class="project-image">
+              <img src="https://ext.same-assets.com/3041271044/2407825081.jpeg" alt="3D Character Model">
+            </div>
+            <div class="project-info">
+              <h3>3D Character Model</h3>
+              <p>Fully rigged 3D anime character model ready for animation and game integration.</p>
+              <div class="project-tags">
+                <span class="project-tag">3D Modeling</span>
+                <span class="project-tag">Blender</span>
+                <span class="project-tag">Character Design</span>
+              </div>
+              <div class="project-links">
+                <a href="#" class="project-link">View Details <i class="fas fa-arrow-right"></i></a>
+                <a href="#" class="project-link">Live Demo <i class="fas fa-external-link-alt"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card animation">
+            <div class="project-image">
+              <img src="https://ext.same-assets.com/3041271044/1593146040.jpeg" alt="Fighting Animation Sequence">
+            </div>
+            <div class="project-info">
+              <h3>Fighting Animation Sequence</h3>
+              <p>Dynamic fighting sequence animation inspired by popular shonen anime.</p>
+              <div class="project-tags">
+                <span class="project-tag">Animation</span>
+                <span class="project-tag">After Effects</span>
+                <span class="project-tag">Character Animation</span>
+              </div>
+              <div class="project-links">
+                <a href="#" class="project-link">View Details <i class="fas fa-arrow-right"></i></a>
+                <a href="#" class="project-link">Live Demo <i class="fas fa-external-link-alt"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card web">
+            <div class="project-image">
+              <img src="https://ext.same-assets.com/3041271044/3403080399.png" alt="Anime E-commerce Store">
+            </div>
+            <div class="project-info">
+              <h3>Anime E-commerce Store</h3>
+              <p>Online store for anime merchandise with shopping cart and payment integration.</p>
+              <div class="project-tags">
+                <span class="project-tag">React</span>
+                <span class="project-tag">E-commerce</span>
+                <span class="project-tag">UI/UX Design</span>
+              </div>
+              <div class="project-links">
+                <a href="#" class="project-link">View Details <i class="fas fa-arrow-right"></i></a>
+                <a href="#" class="project-link">Live Demo <i class="fas fa-external-link-alt"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card illustration">
+            <div class="project-image">
+              <img src="https://ext.same-assets.com/3041271044/3447003164.png" alt="Fantasy Environment Design">
+            </div>
+            <div class="project-info">
+              <h3>Fantasy Environment Design</h3>
+              <p>Fantasy world environment design inspired by isekai anime settings.</p>
+              <div class="project-tags">
+                <span class="project-tag">Environment Design</span>
+                <span class="project-tag">Digital Painting</span>
+                <span class="project-tag">Concept Art</span>
+              </div>
+              <div class="project-links">
+                <a href="#" class="project-link">View Details <i class="fas fa-arrow-right"></i></a>
+                <a href="#" class="project-link">Live Demo <i class="fas fa-external-link-alt"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="skills">
+      <div class="container">
+        <h2 class="section-title">My Skills</h2>
+        <div class="skills-content">
+          <div class="skill-category">
+            <h3>Design</h3>
+            <ul class="skill-list">
+              <li class="skill-item">
+                <span class="skill-name">UI/UX Design</span>
+                <div class="skill-bar">
+                  <div class="skill-progress" style="width: 90%"></div>
+                </div>
+              </li>
+              <li class="skill-item">
+                <span class="skill-name">Illustration</span>
+                <div class="skill-bar">
+                  <div class="skill-progress" style="width: 85%"></div>
+                </div>
+              </li>
+              <li class="skill-item">
+                <span class="skill-name">Animation</span>
+                <div class="skill-bar">
+                  <div class="skill-progress" style="width: 80%"></div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="skill-category">
+            <h3>Development</h3>
+            <ul class="skill-list">
+              <li class="skill-item">
+                <span class="skill-name">HTML/CSS</span>
+                <div class="skill-bar">
+                  <div class="skill-progress" style="width: 95%"></div>
+                </div>
+              </li>
+              <li class="skill-item">
+                <span class="skill-name">JavaScript</span>
+                <div class="skill-bar">
+                  <div class="skill-progress" style="width: 90%"></div>
+                </div>
+              </li>
+              <li class="skill-item">
+                <span class="skill-name">React</span>
+                <div class="skill-bar">
+                  <div class="skill-progress" style="width: 85%"></div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="about">
+      <div class="container">
+        <h2 class="section-title">About Me</h2>
+        <div class="about-content">
+          <div class="about-image">
+            <img src="https://via.placeholder.com/400x500" alt="Profile Photo">
+          </div>
+          <div class="about-text">
+            <h3>Hello, I'm <span>Your Name</span></h3>
+            <p class="about-description">
+              I'm a digital artist and web developer with a passion for anime-inspired design and creative coding. With over 5 years of experience creating immersive digital experiences, I specialize in bringing characters and stories to life through animation, illustration, and interactive web applications.
+            </p>
+            <p class="about-description">
+              My approach combines technical expertise with artistic vision, allowing me to create work that is both visually stunning and functionally robust. I'm constantly exploring new techniques and technologies to push the boundaries of what's possible in digital art and design.
+            </p>
+            <div class="about-stats">
+              <div class="stat">
+                <span class="stat-number">50+</span>
+                <span class="stat-label">Projects Completed</span>
+              </div>
+              <div class="stat">
+                <span class="stat-number">30+</span>
+                <span class="stat-label">Happy Clients</span>
+              </div>
+              <div class="stat">
+                <span class="stat-number">5+</span>
+                <span class="stat-label">Years Experience</span>
+              </div>
+            </div>
+            <a href="#" class="download-cv">Download CV <i class="fas fa-download"></i></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact">
+      <div class="container">
+        <h2 class="section-title">Get In Touch</h2>
+        <div class="contact-content">
+          <div class="contact-info">
+            <h3>Contact Information</h3>
+            <ul class="contact-list">
+              <li class="contact-item">
+                <i class="fas fa-envelope"></i>
+                <span>youremail@example.com</span>
+              </li>
+              <li class="contact-item">
+                <i class="fas fa-phone"></i>
+                <span>+1 (123) 456-7890</span>
+              </li>
+              <li class="contact-item">
+                <i class="fas fa-map-marker-alt"></i>
+                <span>Your City, Country</span>
+              </li>
+            </ul>
+            <div class="social-links">
+              <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+              <a href="#" class="social-link"><i class="fab fa-dribbble"></i></a>
+              <a href="#" class="social-link"><i class="fab fa-github"></i></a>
+              <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+            </div>
+          </div>
+          <form class="contact-form">
+            <div class="form-group">
+              <label for="name">Your Name</label>
+              <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+              <label for="email">Your Email</label>
+              <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+              <label for="subject">Subject</label>
+              <input type="text" id="subject" name="subject" required>
+            </div>
+            <div class="form-group">
+              <label for="message">Your Message</label>
+              <textarea id="message" name="message" rows="5" required></textarea>
+            </div>
+            <button type="submit" class="submit-btn">Send Message <i class="fas fa-paper-plane"></i></button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-logo">
+            <a href="#hero" class="logo-link">Your<span>Anime</span></a>
+            <p>Bringing anime aesthetics to professional portfolios</p>
+          </div>
+          <div class="footer-nav">
+            <h3>Quick Links</h3>
+            <ul class="footer-nav-list">
+              <li class="footer-nav-item"><a href="#hero">Home</a></li>
+              <li class="footer-nav-item"><a href="#projects">Projects</a></li>
+              <li class="footer-nav-item"><a href="#skills">Skills</a></li>
+              <li class="footer-nav-item"><a href="#about">About</a></li>
+              <li class="footer-nav-item"><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+          <div class="footer-social">
+            <h3>Connect</h3>
+            <div class="social-links">
+              <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+              <a href="#" class="social-link"><i class="fab fa-dribbble"></i></a>
+              <a href="#" class="social-link"><i class="fab fa-github"></i></a>
+              <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2025 YourAnime Portfolio. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script type="module" src="/src/main.ts"></script>
+</body>
+
+</html>
